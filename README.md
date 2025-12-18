@@ -6,9 +6,10 @@ PointHub - PointHub downloader & PointEngine project manager
 
 planned features of PointHub:
 
-- [] project-management
-- [] project version control 
-- [] PointEngine versions downloader
+- [ ] beauty GUI (working right now)
+- [ ] project-management
+- [ ] project version control 
+- [ ] PointEngine versions downloader
 
 ## Usage
 
