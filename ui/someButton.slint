@@ -1,0 +1,21 @@
+component someButton {
+    property <int> count: 0;
+    Rectangle {
+        border-color: black;
+        background: black;
+        border-width: 2px;
+        border-radius: 20px;
+        width: 220px;
+        height: 50px;
+        Text {
+            text: "number of clicks: " + count;
+            font-size: 24px;
+        }
+        TouchArea {
+            clicked => {
+                count = count + 1;
+                return count;
+            }
+        }
+    }
+}
