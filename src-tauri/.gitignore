@@ -1,0 +1,12 @@
+/target/
+
+/gen/schemas
+
+
+/src-tauri/target
+
+/src-tauri/Cargo.lock
+
+/src-tauri/icons/*
+!/src-tauri/icons/GenerateIcons.py
+!/src-tauri/icons/IconHub.svg

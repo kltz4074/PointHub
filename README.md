@@ -1,23 +1,7 @@
-# PointHub
+# Tauri + Vanilla
 
-PointHub - PointHub downloader & PointEngine project manager
+This template should help get you started developing with Tauri in vanilla HTML, CSS and Javascript.
 
-## About
+## Recommended IDE Setup
 
-planned features of PointHub:
-
-- [ ] beauty GUI (working right now)
-- [ ] project-management
-- [ ] project version control 
-- [ ] PointEngine versions downloader
-
-## Usage
-
-4. Build with `cargo`:
-    ```
-    cargo build
-    ```
-5. Run the application binary:
-    ```
-    cargo run
-    ```
+- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
