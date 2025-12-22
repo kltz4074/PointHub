@@ -54,22 +54,30 @@ body {
 .content {
   position: fixed;
   top: 40px;
-  left: 250px;
+  left: 150px;
   z-index: 1;
 }
 
-.content h1 {
-  position: absolute;
+.content .Logo {
+  position: fixed;
   transform: translate(-50%, -50%);
-  font-size: 5em;
+  font-size: 3em;
+  font-weight: bold;
+  
+  border-color: #5a26a3;
+  border-width: 2px;
+  border-style: solid;
+  border-bottom-right-radius: 20px;
+  border-left-width: 0;
+  border-top-width: 0;
 }
 
-.content h1:nth-child(1) {
+.content .Logo:nth-child(1) {
   color: transparent;
   -webkit-text-stroke: 2px #8338ec;
 }
 
-.content h1:nth-child(2) {
+.content .Logo:nth-child(2) {
   color: #c19bf5;
   animation: animate 4s ease-in-out infinite;
 }
@@ -104,7 +112,23 @@ body {
   }
 }
 
-.Logo  {
-  border-width: 2px;
-  border-color: #ffffff;
+.Menus {
+  border-style: solid;
+  border-width: 3px;
+  border-color: #461689;
+  border-radius: 20px;
+
+  margin-top: 76px;
+  height: 200px;
+  width: 100px;
+
+  justify-content: center;
+  place-content: center;
+}
+
+.Installs {
+  color: rgb(224, 224, 224);
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: large;
 }
