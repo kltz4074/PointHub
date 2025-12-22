@@ -10,9 +10,13 @@
     "withGlobalTauri": true,
     "windows": [
       {
-        "title": "pointhub",
+        "title": "PointHub",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "resizable": true,
+        "fullscreen": false,
+        "minHeight": 100,
+        "minWidth": 100
       }
     ],
     "security": {
