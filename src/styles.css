@@ -64,7 +64,7 @@ body {
   font-size: 3em;
   font-weight: bold;
   
-  border-color: #5a26a3;
+  border-color: #461689b4;
   border-width: 2px;
   border-style: solid;
   border-bottom-right-radius: 20px;
@@ -115,11 +115,12 @@ body {
 .Menus {
   border-style: solid;
   border-width: 3px;
-  border-color: #461689;
+  border-color: #461689b4;
+  background-color: #000 ;
   border-radius: 20px;
 
   margin-top: 76px;
-  height: 200px;
+  height: calc(100vh - 76px);
   width: 100px;
 
   justify-content: center;
