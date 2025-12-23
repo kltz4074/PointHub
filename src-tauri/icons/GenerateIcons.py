@@ -25,7 +25,7 @@ svg_to_png(128, f"{OUTPUT_DIR}/128x128.png")
 svg_to_png(256, f"{OUTPUT_DIR}/128x128@2x.png")
 
 # .ico (Windows)
-ico_sizes = [16, 32, 48, 64, 128, 256]
+ico_sizes = [ 128, 256]
 ico_images = []
 
 for size in ico_sizes:
