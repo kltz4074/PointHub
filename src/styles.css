@@ -5,6 +5,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 body {
@@ -136,6 +140,7 @@ LinkButton {
   padding: 11px 0;  
   margin-top: 10px;
   color: aliceblue;
+  box-shadow: 0 8px 25px rgba(12, 4, 24, 0.603);
   font-size: 20px;        
   font-weight: bold;
   text-align: center;
