@@ -11,12 +11,12 @@ body {
   min-height: 100vh;
   background: #000;
   overflow: hidden;
+  z-index: -5;
 }
 
 .waves {
   position: fixed;
   inset: 0;
-  z-index: 0;
   background:
     radial-gradient(
       circle at 0% 50%,
@@ -39,6 +39,7 @@ body {
 
   background-size: 200px 120px;
   animation: waves 6s linear infinite;
+  z-index: -5;
 }
 
 @keyframes waves {
@@ -55,7 +56,6 @@ body {
   position: fixed;
   top: 40px;
   left: 150px;
-  z-index: 1;
 }
 
 .content .Logo {
@@ -127,29 +127,44 @@ body {
   place-content: center;
 }
 
-.Installs {
-  color: rgb(224, 224, 224);
+LinkButton {
+  display: block;            
+  
+  width: 100%;            
+  max-width: 240px;          
+  
+  padding: 11px 0;  
+  margin-top: 10px;
+  color: aliceblue;
+  font-size: 20px;        
   font-weight: bold;
-  font-size: 25px;
   text-align: center;
-
-  text-transform: translate(-50%, -50%);
-  border-style: solid;
-  border-color: rgba(240, 248, 255, 0.562);
-  border-width: 2px;
-  border-radius: 25px;
+  
+  background-color: #4616894b;
+  border: 1px solid rgba(67, 5, 148, 0.85);
+  border-radius: 30px;
+  
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
 
-.Projects {
-  color: rgb(224, 224, 224);
-  font-weight: bold;
-  font-size: 25px;
-  text-align: center;
+LinkButton:hover {
+  background-color: rgba(114, 31, 231, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(99, 32, 194, 0.4);
+  z-index: 10;
+}
 
-  margin-top: 10px;
-  text-transform: translate(-50%, -50%);
-  border-style: solid;
-  border-color: rgba(240, 248, 255, 0.562);
-  border-width: 2px;
-  border-radius: 25px;
+LinkButton:active {
+  background-color: rgba(114, 31, 231, 0.4);
+  transform: scale(0.98) translateY(1px);
+  box-shadow: 0 8px 25px rgba(99, 32, 194, 0.4);
+  z-index: 10;
+}
+
+@media (max-width: 500px) {
+  LinkButton {
+    font-size: 26px;
+    padding: 14px 0;
+  }
 }
