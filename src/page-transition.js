@@ -22,11 +22,7 @@ function initLinks() {
       page.innerHTML = newPageContent;
       page.classList.remove("page-hidden");
 
-      // заново инициализируем ссылки
       initLinks();
-
-      // заново инициализируем canvas
-      // if (typeof initCanvas === "function") initCanvas();
     };
   });
 }
