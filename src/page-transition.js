@@ -15,9 +15,14 @@ function initLinks() {
       const parser = new DOMParser();
       const doc = parser.parseFromString(html, "text/html");
       const newPageContent = doc.querySelector("#page").innerHTML;
-
+      
       page.innerHTML = newPageContent;
+
+      page.classList.add("page-show");
+      await new Promise(r => setTimeout(r, 500));
+
       page.classList.remove("page-hidden");
+      page.classList.remove("page-show")
 
       initLinks();
     };
