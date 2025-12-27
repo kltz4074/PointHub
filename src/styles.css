@@ -116,7 +116,7 @@ body {
   place-content: center;
 }
 
-LinkButton {
+.LinkButton {
   display: block;            
   
   width: 100%;            
@@ -138,13 +138,13 @@ LinkButton {
   cursor: pointer;
 }
 
-LinkButton:hover {
+.LinkButton:hover {
   background-color: rgba(114, 31, 231, 0.4);
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(99, 32, 194, 0.4);
 }
 
-LinkButton:active {
+.LinkButton:active {
   background-color: rgba(114, 31, 231, 0.4);
   transform: scale(0.98) translateY(1px);
   box-shadow: 0 8px 25px rgba(99, 32, 194, 0.4);
@@ -157,7 +157,7 @@ LinkButton:active {
   border-radius: 20px;
   margin-left: 150px;
   position: fixed;
-
+  
   top: 0;
   width: calc(100% - 150px);
   margin-top: 76px;
@@ -165,6 +165,11 @@ LinkButton:active {
 
   justify-items: center;
   align-items: center;
+}
+
+.page-hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 .JustText {
